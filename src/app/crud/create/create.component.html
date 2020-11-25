@@ -1,0 +1,38 @@
+<div class="container">
+    <h3>Create Product</h3>
+    <form [formGroup]="productForm" (ngSubmit)="submitForm()" novalidate>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" formControlName="name" class="form-control" maxlength="50">
+            <div class="error" [hidden]="name!.untouched && name!.pristine">
+                <div class="err-text" id="name-err-req"  *ngIf="name!.hasError('required')">Name is <strong>required</strong></div>
+                <div class="err-text" id="name-err-req"  *ngIf="name!.hasError('minlength')">Name Should contains minimum <strong>5</strong> characters.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <textarea class="form-control" formControlName="description" rows="3"></textarea>
+            <div class="error" [hidden]="description!.untouched && description!.pristine">
+                <div class="err-text" id="name-err-req"  *ngIf="description!.hasError('required')">Description is <strong>required</strong></div>
+                <div class="err-text" id="name-err-req"  *ngIf="description!.hasError('minlength')">Description Should contains minimum <strong>20</strong> characters.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Price</label>
+            <input type="text" formControlName="price" class="form-control">
+            <div class="error" [hidden]="price!.untouched && price!.pristine">
+                <div class="err-text" id="name-err-req"  *ngIf="price!.hasError('required')">Price is <strong>required</strong></div>
+                <div class="err-text" id="name-err-req"  *ngIf="price!.hasError('pattern')">Price Should be a <strong>Number</strong></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Quantity</label>
+            <input type="text" formControlName="quantity" class="form-control">
+            <div class="error" [hidden]="quantity!.untouched && quantity!.pristine">
+                <div class="err-text" id="name-err-req"  *ngIf="quantity!.hasError('required')">Quantity is <strong>required</strong></div>
+                <div class="err-text" id="name-err-req"  *ngIf="quantity!.hasError('pattern')">Quantity Should be a <strong>Number</strong></div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-sm btn-primary" [disabled]="!productForm.valid">Submit</button>
+    </form>
+</div>

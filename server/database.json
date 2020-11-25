@@ -1,0 +1,51 @@
+{
+  "products": [
+    {
+      "name": "Generic Fresh Table Aakash",
+      "description": "Quod provident assumenda error consequatur magnam dolores. Provident est aperiam fuga dolorem. Et quia eum. Modi quisquam id qui doloremque qui et.",
+      "price": "232.00",
+      "quantity": 92799,
+      "id": 4
+    },
+    {
+      "id": 5,
+      "name": "Tasty Soft Sausages",
+      "description": "Delectus veniam qui voluptas sint et. Reiciendis quia cupiditate saepe perspiciatis ut dolorem quod.",
+      "price": "816.00",
+      "imageUrl": "https://source.unsplash.com/1600x900/?product",
+      "quantity": 93402
+    },
+    {
+      "id": 6,
+      "name": "Awesome Granite Bike",
+      "description": "Numquam et sapiente et ex repellat natus voluptatem. Quo et nesciunt dolor. Omnis vero enim accusantium earum. Laborum dolore est optio voluptatem tempore cumque dolorem qui. Neque harum placeat qui modi consequatur tempore quidem dolorem eum. Eum id assumenda velit ullam temporibus.",
+      "price": "290.00",
+      "imageUrl": "https://source.unsplash.com/1600x900/?product",
+      "quantity": 77464
+    },
+    {
+      "id": 7,
+      "name": "Fantastic Wooden Towels",
+      "description": "Ad assumenda exercitationem quia autem sint eligendi quos magnam. Non tempora libero accusantium. Eveniet incidunt illum architecto est. Laborum sint nihil. Laborum quibusdam magni et aperiam quia sunt. Nostrum iste blanditiis ipsa.",
+      "price": "726.00",
+      "imageUrl": "https://source.unsplash.com/1600x900/?product",
+      "quantity": 75983
+    },
+    {
+      "id": 8,
+      "name": "Incredible Wooden Mouse",
+      "description": "Quasi neque minus ipsam quo a fugit. Pariatur nemo dolor. Maxime debitis fugiat inventore eaque dignissimos voluptatem consequatur adipisci. Non beatae omnis. Temporibus eum hic. Corrupti dicta a dolorem ad et qui temporibus.",
+      "price": "953.00",
+      "imageUrl": "https://source.unsplash.com/1600x900/?product",
+      "quantity": 77089
+    },
+    {
+      "id": 9,
+      "name": "Ergonomic Soft Shirt",
+      "description": "Molestias suscipit in. Nemo odio facere. Eveniet quod quia eum non natus. Maiores iusto officiis eum quae quas eligendi est cumque. Earum molestias labore cupiditate enim optio. Aut harum libero.",
+      "price": "508.00",
+      "imageUrl": "https://source.unsplash.com/1600x900/?product",
+      "quantity": 62835
+    }
+  ]
+}

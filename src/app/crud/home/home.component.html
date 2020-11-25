@@ -1,0 +1,29 @@
+<div class="container">
+    <h3>My Products</h3>
+    <button type="button" [routerLink]="'/crud/create/'" class="btn btn-sm btn-primary mb-1">Create new product</button>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>                            
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td scope="row">{{product.id}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.description}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.quantity}}</td>
+                <td>
+                    <button type="button" class="btn btn-sm btn-success" [routerLink]="['/crud/update/', product.id]"><i class="fas fa-edit" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-sm btn-danger" (click)="deleteProduct(product.id)"><i class="fas fa-trash" aria-hidden="true"></i></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
